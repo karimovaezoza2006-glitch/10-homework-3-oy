@@ -1,0 +1,5 @@
+object ichida create qilingan function method deyiladi. 
+JavaScript method- funksiya qiymatiga ega bo’lgan obyekt xususiyati. Method ichida obyektning xususiyatlarini ishlatish uchun this kalit so’zidan foydalaniladi. 
+Object.keys()- berilgan obyektning kalitlar ro’yhatini qaytaruvchi maxsus funksiya. 
+Object.values()- berilgan obyektning qiymatlar ro’yhatini qaytaruvchi maxsus funksiya. 
+Object.entries()- berilgan hamma ma’lumotlarni alohida alohida array shaklida hosil qilib beradi. 

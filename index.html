@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- 1-Header top  section start -->
+  <header class="bg-[#fff] shadow-sm w-full sticky top-0 z-50">
+  <div
+    class="w-full px-4 py-3 border-b border-gray-300 text-black flex flex-col md:flex-row items-center justify-between gap-2 md:gap-4 max-w-[1300px] mx-auto container1"
+    data-aos="fade-down"
+  >
+    <!-- Chap taraf -->
+    <div class="flex flex-col sm:flex-row gap-2 sm:gap-6 items-center text-center sm:text-left">
+      <span class="font-normal text-sm sm:text-base md:text-lg lg:text-xl text-black">
+        Режим работы: 10.00–20.00
+      </span>
+      <span class="font-normal text-sm sm:text-base md:text-lg lg:text-xl text-black">
+        Телефон: <strong>8(499)300-49-49</strong>
+      </span>
+      <a
+        href="#"
+        class="text-gray-600 hover:underline font-normal text-sm sm:text-base md:text-lg lg:text-xl"
+      >
+        Заказать обратный звонок
+      </a>
+    </div>
+
+    <!-- O‘ng taraf -->
+    <div class="flex flex-col sm:flex-row gap-2 sm:gap-6 items-center text-center sm:text-left">
+      <span class="font-normal text-sm sm:text-base md:text-lg lg:text-xl text-black">
+        Почта:
+        <a href="mailto:info@markov-tram.ru" class="hover:underline">
+          info@markov-tram.ru
+        </a>
+      </span>
+    </div>
+  </div>
+</header>
+    <!-- 1-Header top section end -->
+
+    <!-- 2-Header center section start -->
+     <header class="sticky top-0 z-50 bg-[#eaeaea]">
+    <div class="max-w-[1300px] w-[90%] mx-auto flex items-center justify-between py-3">
+
+      <nav class="hidden md:flex items-center  border rounded-full overflow-hidden text-gray-800 font-medium">
+        <a href="#" data-aos="fade-down" class="px-4 py-2 hover:bg-gray-100">О нас</a>
+        <a href="#" data-aos="fade-down" data-aos-delay="100" class="px-4 py-2 hover:bg-gray-100">Доставка</a>
+        <a href="#" data-aos="fade-down" data-aos-delay="200" class="px-4 py-2 hover:bg-gray-100">Оплата</a>
+        <a href="#" data-aos="fade-down" data-aos-delay="300" class="px-4 py-2 hover:bg-gray-100">Отзывы</a>
+        <a href="#" data-aos="fade-down" data-aos-delay="400" class="px-4 py-2 hover:bg-gray-100">Вопросы</a>
+        <a href="#" data-aos="fade-down" data-aos-delay="500" class="px-4 py-2 hover:bg-gray-100">ОПТ</a>
+        <a href="#" data-aos="fade-down" data-aos-delay="600" class="px-4 py-2 hover:bg-gray-100">Услуги</a>
+      </nav>
+
+      <div class="flex items-center space-x-6 text-gray-700">
+        <span data-aos="fade-left" class="text-sm">Язык сайта: EN/RU</span>
+        <a href="tel:+74993004949" data-aos="fade-left" data-aos-delay="200" 
+           class="font-semibold text-lg">8(499)300-49-49</a>
+      </div>
+    </div>
+     </header>
+    <!-- 2-Header center section end -->
+
+    <!-- 3-Header bottom section start -->
+     <div class="bg-white shadow sticky top-14 z-40">
+    <div class="container1 flex items-center justify-between py-2">
+
+      
+      <nav class="hidden md:flex items-center space-x-6 text-gray-800 font-medium">
+        <a href="#" data-aos="fade-down" class="hover:text-blue-600 transition font-medium text-3xl text-black">Каталог одежды</a>
+        <a href="#" data-aos="fade-down" data-aos-delay="100" class="hover:text-blue-600 transition font-medium text-3xl text-black">Экипировка</a>
+        <a href="#" data-aos="fade-down" data-aos-delay="200" class="hover:text-blue-600 transition font-medium text-3xl text-black">Форма под заказ</a>
+      </nav>
+
+   
+      <div class="flex items-center space-x-3">
+
+        <a href="#" data-aos="fade-left" class="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">
+          Создать свой дизайн
+        </a>
+
+  
+        <a href="#" data-aos="fade-left" data-aos-delay="200"
+           class="flex items-center space-x-2 px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">
+          <img src="./images/header.svg" class="w-[20px] h-[35px]">
+          <span>Корзина</span>
+          <span class="ml-1 text-sm bg-white px-2 py-0.5 rounded-full border">4</span>
+        </a>
+      </div>
+
+    
+      <button id="menu-btn" class="md:hidden flex flex-col space-y-1">
+        <span class="w-6 h-0.5 bg-gray-700"></span>
+        <span class="w-6 h-0.5 bg-gray-700"></span>
+        <span class="w-6 h-0.5 bg-gray-700"></span>
+      </button>
+    </div>
+     </div>
+    <!-- 3-Header bottom section end -->
+
+    <!-- 4-Wrapper section start -->
+   <section class="bg-[#eaeaea] py-10">
+  <div class="container1 px-4 ">
+    <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+      
+      <!-- Left: Text -->
+      <div class="text-center lg:text-left" data-aos="fade-right">
+        <h2 class="font-medium text-[64px] sm:text-[80px] md:text-[100px] lg:text-[144px] text-black leading-none">3=2</h2>
+        <p class="font-medium text-2xl sm:text-3xl md:text-4xl lg:text-6xl text-black py-6">
+          Закажи три футболки, <br class="hidden sm:block">а заплати только за две
+        </p>
+        <button class="w-full max-w-[400px] h-[60px] font-normal text-xl sm:text-2xl lg:text-3xl text-black rounded-[91px] bg-[#c4c4c4]">
+          Перейти в каталог
+        </button>
+      </div>
+
+      <!-- Right: Image -->
+      <div data-aos="fade-left">
+        <img src="./images/wrapper.svg" class="w-full max-w-[600px] h-auto">
+        <p class="font-light text-lg text-black">*акция действительна до 03.05.22</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!-- 4-Wrapper section end -->
+
+    <!-- 5-Cards section start -->
+<section class="px-4 py-8 container1">
+  <h2 class="text-4xl md:text-5xl lg:text-7xl font-medium text-black py-[15px] text-center md:text-left">
+    Что вы ищите?
+  </h2>
+
+  <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-6">
+    
+    <!-- 1 -->
+    <div data-aos="fade-up" class="w-full max-w-[400px] h-auto shadow-[2px_4px_27px_0_rgba(0,0,0,0.25)] rounded-[36px] bg-white p-6 flex flex-col justify-between">
+      <div>
+        <h3 class="font-normal text-2xl md:text-3xl text-black py-2">Верх</h3>
+        <p class="text-gray-600 text-md">Футболки, майки</p>
+      </div>
+      <img src="./images/card1.svg" alt="card1" class="mt-4">
+    </div>
+
+    <!-- 2 -->
+    <div data-aos="fade-up" data-aos-delay="100" class="w-full max-w-[400px] h-auto shadow-[2px_4px_27px_0_rgba(0,0,0,0.25)] rounded-[36px] bg-white p-6 flex flex-col justify-between">
+      <div>
+        <h3 class="font-normal text-2xl md:text-3xl text-black py-2">Низ</h3>
+        <p class="text-gray-600 text-md">Велосипедки, леггинсы</p>
+      </div>
+      <img src="./images/card2.svg" alt="card2" class="mt-4">
+    </div>
+
+    <!-- 3 -->
+    <div data-aos="fade-up" data-aos-delay="200" class="w-full max-w-[400px] h-auto shadow-[2px_4px_27px_0_rgba(0,0,0,0.25)] rounded-[36px] bg-white p-6 flex flex-col justify-between">
+      <div>
+        <h3 class="font-normal text-2xl md:text-3xl text-black py-2">Обувь</h3>
+        <p class="text-gray-600 text-md">Штангетки</p>
+      </div>
+      <img src="./images/card3.svg" alt="card3" class="mt-4">
+    </div>
+
+    <!-- 4 -->
+    <div data-aos="fade-up" data-aos-delay="300" class="w-full max-w-[400px] h-auto shadow-[2px_4px_27px_0_rgba(0,0,0,0.25)] rounded-[36px] bg-white p-6 flex flex-col justify-between">
+      <div>
+        <h3 class="font-normal text-2xl md:text-3xl text-black py-2">Инвентарь</h3>
+        <p class="text-gray-600 text-md">Магнезия для гиревого спорта</p>
+      </div>
+      <img src="./images/card4.svg" alt="card4" class="mt-4">
+    </div>
+
+    <!-- 5 -->
+    <div data-aos="fade-up" data-aos-delay="400" class="w-full max-w-[400px] h-auto shadow-[2px_4px_27px_0_rgba(0,0,0,0.25)] rounded-[36px] bg-white p-6 flex flex-col justify-between">
+      <div>
+        <h3 class="font-normal text-2xl md:text-3xl text-black py-2">Экипировка</h3>
+        <p class="text-gray-600 text-md">Ремни для гиревого спорта и тяжелоатлетические</p>
+      </div>
+      <img src="./images/card5.svg" alt="card5" class="mt-4">
+    </div>
+
+    <!-- 6 -->
+    <div data-aos="fade-up" data-aos-delay="500" class="w-full max-w-[400px] h-auto shadow-[2px_4px_27px_0_rgba(0,0,0,0.25)] rounded-[36px] bg-white p-6 flex flex-col justify-between">
+      <div>
+        <h3 class="font-normal text-2xl md:text-3xl text-black py-2">Маски</h3>
+        <p class="text-gray-600 text-md">Медицинские с готовым и индивидуальным дизайном</p>
+      </div>
+      <img src="./images/card6.svg" alt="card6" class="mt-4">
+    </div>
+
+  </div>
+</section>
+    <!-- 5-Cards section end -->
+
+    <!-- 6-Zakaz section start -->
+ <section class="rounded-[36px] w-full h-auto shadow-[2px_4px_27px_0_rgba(0,0,0,0.25)] bg-[#fefefe] container1 p-6 md:p-10">
+  <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+
+    <!-- Text Block -->
+    <div data-aos="fade-right" class="w-full lg:w-1/2">
+      <h6 class="font-semibold text-3xl sm:text-4xl md:text-5xl text-black">
+        Командная форма на заказ
+      </h6>
+
+      <p class="font-normal text-lg sm:text-xl md:text-2xl text-black py-[15px]">
+        Разрабатываем дизайн и шьём на заказ футбольную, волейбольную, гиревую форму, а также тяжелоатлетические костюмы и гимнастические купальники.
+      </p>
+
+      <!-- List Items -->
+      <div class="flex items-start gap-4 py-2 group cursor-pointer transition">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" class="group-hover:fill-[#555] transition">
+          <circle cx="7.5" cy="7.5" r="7.5" fill="#373737" />
+        </svg>
+        <p class="font-normal text-xl sm:text-2xl lg:text-[32px] text-black group-hover:text-[#555] transition">
+          Нанесения логотипа
+        </p>
+      </div>
+
+      <div class="flex items-start gap-4 py-2 group cursor-pointer transition">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" class="group-hover:fill-[#555] transition">
+          <circle cx="7.5" cy="7.5" r="7.5" fill="#373737" />
+        </svg>
+        <p class="font-normal text-xl sm:text-2xl lg:text-[32px] text-black group-hover:text-[#555] transition">
+          Печать номера и фамилии
+        </p>
+      </div>
+
+      <div class="flex items-start gap-4 py-2 group cursor-pointer transition">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" class="group-hover:fill-[#555] transition">
+          <circle cx="7.5" cy="7.5" r="7.5" fill="#373737" />
+        </svg>
+        <p class="font-normal text-xl sm:text-2xl lg:text-[32px] text-black group-hover:text-[#555] transition">
+          Разработка дизайна формы
+        </p>
+      </div>
+
+      <!-- Button with Hover -->
+      <button data-aos="zoom-in"
+        class="mt-6 w-full max-w-[432px] h-[65px] sm:h-[70px] md:h-[75px] lg:h-[79px] 
+               text-2xl sm:text-3xl lg:text-4xl font-normal text-black 
+               bg-[#f2f2f2] rounded-[82px] shadow-[0_4px_4px_rgba(0,0,0,0.25),2px_4px_27px_rgba(0,0,0,0.25)]
+               transition hover:bg-gray-300 hover:scale-105">
+        Узнать подробнее
+      </button>
+    </div>
+
+    <!-- Image -->
+    <div data-aos="fade-left" class="w-full lg:w-1/2 flex justify-center">
+      <img src="./images/zakaz.svg" alt="Заказ форма" class="w-full max-w-[800px] h-auto">
+    </div>
+  </div>
+</section>
+<br><br>
+    <!-- 6-Zakaz section end -->
+
+    <!-- 7-Tovar section start -->
+    <!-- 7-Tovar section end -->
+
+    <!-- 8-Product section start -->
+    <!-- 8-Product section end -->
+
+    <!-- 9-Examples section start -->
+ <section class="rounded-[36px] w-full h-auto shadow-[2px_4px_27px_0_rgba(0,0,0,0.25)] bg-[#fefefe] container1 p-6 md:p-10">
+  <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+
+    <!-- Chap tarafdagi rasm -->
+    <div data-aos="fade-right" class="flex justify-center w-full lg:w-1/2">
+      <img src="./images/examples.svg" alt="Конструктор" class="w-full max-w-[500px] h-auto">
+    </div>
+
+    <!-- O‘ng tarafdagi matn -->
+    <div data-aos="fade-left" class="w-full lg:w-1/2 text-center lg:text-left">
+      <h2 class="font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black">
+        Не нашли подходящий товар?
+      </h2>
+      <h2 class="font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black mt-1">
+        Создайте его сами.
+      </h2>
+
+      <p class="font-normal text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-black py-5">
+        Воспользуйтесь нашим онлайн-конструктором одежды<br class="hidden md:block">
+        и создайте товар на свой вкус. <br class="hidden md:block">
+        Вы можете добавить фото, текст или принт.<br class="hidden md:block">
+        А мы реализуем вашу идею и напечатаем дизайн на одежде.
+      </p>
+
+      <!-- Tugma -->
+      <button data-aos="zoom-in"
+        class="rounded-[82px] w-full max-w-[480px] py-3 sm:py-4 md:py-5 lg:py-[15px]
+               h-[55px] sm:h-[60px] md:h-[65px] lg:h-[71px] 
+               shadow-[0_4px_4px_0_rgba(0,0,0,0.25),2px_4px_27px_0_rgba(0,0,0,0.25)] 
+               bg-[#f2f2f2] font-normal text-lg sm:text-xl md:text-2xl lg:text-[32px] text-black mx-auto lg:mx-0">
+        Создать в конструкторе
+      </button>
+    </div>
+  </div>
+</section>
+    <!-- 9-Examples section end -->
+
+    <!-- 10-Choose section start -->
+   <section class="container1 py-[30px]">
+  <div class="swiper mySwiper" data-aos="fade-up">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide flex justify-center items-center">
+        <img src="./images/choose1.svg" class="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px]" />
+      </div>
+      <div class="swiper-slide flex justify-center items-center">
+        <img src="./images/choose2.svg" class="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px]" />
+      </div>
+      <div class="swiper-slide flex justify-center items-center">
+        <img src="./images/choose3.svg" class="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px]" />
+      </div>
+      <div class="swiper-slide flex justify-center items-center">
+        <img src="./images/choose1.svg" class="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px]" />
+      </div>
+      <div class="swiper-slide flex justify-center items-center">
+        <img src="./images/choose2.svg" class="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px]" />
+      </div>
+      <div class="swiper-slide flex justify-center items-center">
+        <img src="./images/choose3.svg" class="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px]" />
+      </div>
+    </div>
+    <div class="swiper-pagination mt-6"></div>
+  </div>
+</section>
+    <!-- 10-Choose section end -->
+
+    <!-- 11-About us section start -->
+     <section class="px-4 py-8 max-w-[1300px] mx-auto">
+  <h2 class="text-7xl md:text-5xl font-medium  text-black py-[15px]">
+    Что вы получаете выбирая нас:
+  </h2>
+
+  <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    
+    <!-- 1 -->
+    <div data-aos="fade-up" class="bg-white shadow-md rounded-xl p-6 text-left">
+      <h3 class=" font-normal text-3xl text-black py-[10px]">Высокое качество</h3>
+      <p class="text-gray-600 text-md w-[70%]">
+        Каждое изделие кроится, отшивается и проверяется вручную.
+      </p>
+    </div>
+
+    <!-- 2 -->
+    <div data-aos="fade-up" data-aos-delay="100" class="bg-white shadow-md rounded-xl p-6 text-left">
+      <h3 class=" font-normal text-3xl text-black py-[10px]">Гарантию</h3>
+      <p class="text-gray-600 text-md w-[70%]">
+        Мы гарантируем, что наши изделия выдержат 50 стирок и не потеряет цвет и форму.
+      </p>
+    </div>
+
+    <!-- 3 -->
+    <div data-aos="fade-up" data-aos-delay="200" class="bg-white shadow-md rounded-xl p-6 text-left">
+      <h3 class="font-normal text-3xl text-black py-[10px]">Точность размера</h3>
+      <p class="text-gray-600 text-md w-[70%]">
+        Размеры соответствуют размерной сетке, т.к. отшиваются по собственным лекалам.
+      </p>
+    </div>
+
+    <!-- 4 -->
+    <div data-aos="fade-up" data-aos-delay="300" class="bg-white shadow-md rounded-xl p-6 text-left">
+      <h3 class="font-normal text-3xl text-black py-[10px]">Помощь дизайнера</h3>
+      <p class="text-gray-600 text-md w-[70%]">
+        Помощь в разработке дизайна, доработка существующего макета.
+      </p>
+    </div>
+
+    <!-- 5 -->
+    <div data-aos="fade-up" data-aos-delay="400" class="bg-white shadow-md rounded-xl p-6 text-left">
+      <h3 class="font-normal text-3xl text-black py-[10px">Быстрая доставка</h3>
+      <p class="text-gray-600 text-md w-[70%]">
+        Доставляем по всему миру, отправка вашего заказа в течение 1 дня.
+      </p>
+    </div>
+
+    <!-- 6 -->
+    <div data-aos="fade-up" data-aos-delay="500" class="bg-white shadow-md rounded-xl p-6 text-left ">
+      <h3 class="font-normal text-3xl text-black py-[10px]">Сервис</h3>
+      <p class="text-gray-600 text-md w-[70%]">
+        Лёгкий процесс оплаты, обмена и возврата заказа.
+      </p>
+    </div>
+
+  </div>
+</section>
+    <!-- 11-About us section end -->
+
+    <!-- 12-Question section start -->
+   <section class="bg-[#eaeaea] py-10">
+  <div class="container1 px-4">
+    <h3 data-aos="fade-up" class="font-medium text-3xl md:text-5xl lg:text-7xl text-center text-black">
+      Остались вопросы?
+    </h3>
+    <p data-aos="fade-up" data-aos-delay="200" 
+       class="font-normal text-base sm:text-lg md:text-2xl lg:text-[32px] text-center text-black py-6">
+      Заполните форму и менеджер свяжется<br class="hidden sm:block"> 
+      с вами в ближайшее время.
+    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-5 py-6">
+      <button data-aos="zoom-in" 
+        class="shadow-[2px_4px_27px_0_rgba(0,0,0,0.25)] bg-white rounded-[58px] w-[200px] sm:w-[240px] md:w-[280px] h-[60px] font-light text-lg sm:text-xl md:text-2xl lg:text-[36px] text-center text-black">
+        Задать вопрос
+      </button>
+
+      <button data-aos="zoom-in" data-aos-delay="200"
+        class="shadow-[2px_4px_27px_0_rgba(0,0,0,0.25)] bg-white rounded-[58px] w-[200px] sm:w-[240px] md:w-[280px] h-[60px] font-light text-lg sm:text-xl md:text-2xl lg:text-[36px] text-center text-black">
+        Заказать звонок
+      </button>
+    </div>
+  </div>
+</section>
+    <!-- 12-Question section end -->
+
+    <!-- 13-Footer section start -->
+      <footer class="bg-white border-t mt-10">
+    <div class="max-w-[1300px] w-[90%] mx-auto py-10 grid grid-cols-1 md:grid-cols-4 gap-8 text-gray-800 text-sm">
+
+      <!-- COL 1 -->
+      <div data-aos="fade-up">
+        <ul class="space-y-2  font-normal text-2xl text-black">
+          <li><a href="#" class="hover:text-blue-600 ">Оплата</a></li>
+          <li><a href="#" class="hover:text-blue-600">Возврат</a></li>
+          <li><a href="#" class="hover:text-blue-600">Доставка</a></li>
+          <li><a href="#" class="hover:text-blue-600">Вопросы</a></li>
+        </ul>
+      </div>
+
+      <!-- COL 2 -->
+      <div data-aos="fade-up" data-aos-delay="100">
+        <ul class="space-y-2 font-normal text-2xl text-black">
+          <li><a href="#" class="hover:text-blue-600">О нас</a></li>
+          <li><a href="#" class="hover:text-blue-600">Услуги</a></li>
+          <li><a href="#" class="hover:text-blue-600">Отзывы</a></li>
+          <li><a href="#" class="hover:text-blue-600">Оптовый отдел</a></li>
+        </ul>
+      </div>
+
+      <!-- COL 3 -->
+      <div data-aos="fade-up " data-aos-delay="200">
+        <ul class="space-y-2 font-normal text-2xl text-black">
+          <li><a href="#" class="hover:text-blue-600">Каталог</a></li>
+          <li><a href="#" class="hover:text-blue-600">Размерная сетка</a></li>
+          <li><a href="#" class="hover:text-blue-600">Командная форма</a></li>
+          <li><a href="#" class="hover:text-blue-600">Создание дизайна формы</a></li>
+        </ul>
+      </div>
+
+      <!-- COL 4 (CONTACT + SOCIALS) -->
+      <div class="space-y-4" data-aos="fade-up" data-aos-delay="300">
+        <p class="font-semibold text-3xl text-black">8(499)300-49-49</p>
+        <p><a href="mailto:info@markov-team.ru" class="hover:text-blue-600 font-medium text-xl text-blac">info@markov-team.ru</a></p>
+
+        <!-- SOCIAL ICONS -->
+        <div class="flex space-x-3">
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center hover:bg-blue-500 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1 .9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12z"/></svg>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center hover:bg-pink-500 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .3 2.5.5a5 5 0 0 1 1.8 1.2 5 5 0 0 1 1.2 1.8c.2.5.4 1.3.5 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.5a5 5 0 0 1-1.2 1.8 5 5 0 0 1-1.8 1.2c-.5.2-1.3.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.5-.5a5 5 0 0 1-1.8-1.2 5 5 0 0 1-1.2-1.8c-.2-.5-.4-1.3-.5-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-2 .5-2.5a5 5 0 0 1 1.2-1.8A5 5 0 0 1 6.2 1.6c.5-.2 1.3-.4 2.5-.5C9.9 1 10.3 1 12 1m0-1C8.7 0 8.3 0 7 .1 5.7.2 4.8.5 4.2.7a6.5 6.5 0 0 0-2.3 1.5A6.5 6.5 0 0 0 .4 4.6c-.2.6-.5 1.5-.6 2.8C-.3 8.7-.3 9.1-.3 12s0 3.3.1 4.6c.1 1.3.4 2.2.6 2.8a6.5 6.5 0 0 0 1.5 2.3 6.5 6.5 0 0 0 2.3 1.5c.6.2 1.5.5 2.8.6 1.3.1 1.7.1 4.6.1s3.3 0 4.6-.1c1.3-.1 2.2-.4 2.8-.6a6.5 6.5 0 0 0 2.3-1.5 6.5 6.5 0 0 0 1.5-2.3c.2-.6.5-1.5.6-2.8.1-1.3.1-1.7.1-4.6s0-3.3-.1-4.6c-.1-1.3-.4-2.2-.6-2.8a6.5 6.5 0 0 0-1.5-2.3 6.5 6.5 0 0 0-2.3-1.5c-.6-.2-1.5-.5-2.8-.6C15.3.2 14.9.1 12 .1z"/></svg>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center hover:bg-sky-500 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.6c-.9.4-1.8.7-2.8.8a4.9 4.9 0 0 0 2.1-2.7c-1 .6-2 .9-3.1 1.2a5 5 0 0 0-8.7 4.5 14.2 14.2 0 0 1-10.3-5.2 5 5 0 0 0 1.5 6.7c-.8 0-1.6-.3-2.3-.6v.1a5 5 0 0 0 4 4.9c-.5.1-1 .2-1.5.2-.4 0-.7 0-1.1-.1a5 5 0 0 0 4.6 3.5A10 10 0 0 1 0 19.6a14.2 14.2 0 0 0 7.7 2.2c9.2 0 14.3-7.6 14.3-14.2v-.6c1-.7 1.8-1.6 2.5-2.4z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- 13-Footer section end -->
+
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, 
+    once: true    
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>
