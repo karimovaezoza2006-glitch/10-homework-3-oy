@@ -3,3 +3,17 @@ JavaScript method- funksiya qiymatiga ega bo’lgan obyekt xususiyati. Method ic
 Object.keys()- berilgan obyektning kalitlar ro’yhatini qaytaruvchi maxsus funksiya. 
 Object.values()- berilgan obyektning qiymatlar ro’yhatini qaytaruvchi maxsus funksiya. 
 Object.entries()- berilgan hamma ma’lumotlarni alohida alohida array shaklida hosil qilib beradi. 
+Object — bu bir nechta qiymatlarni kalit:qiymat (key:value) juftliklarida saqlaydigan ma'lumot tuzilmasi. Masalan, inson haqida ma'lumotlar: ism, yosh, kurs — bularni bitta object ichida saqlash qulay.
+const student = {
+  name: "ezoza",
+  age: 19,
+  course: "Informatika"
+};
+Oddiy (literal) object-Bu eng ko‘p ishlatiladigan object turi. Kalit:qiymat juftliklaridan iborat bo‘ladi.
+. Constructor object (funksiya orqali yaratiladigan)-Objectlarni constructor yordamida ham yaratish mumkin:
+function Student(name, age) {
+  this.name = name;
+  this.age = age;
+}
+const s1 = new Student("Dilshod", 21);
+this — bu hozirgi contextdagi objectni ko‘rsatadigan kalit so‘z. Ya’ni qaysi object ichida ishlatilsa, this o‘sha objectga ishora qiladi.
